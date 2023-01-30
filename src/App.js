@@ -5,7 +5,7 @@ import Pensando from './components/Pensando';
 function App() {
   return (
     <div className="App">
-      <Pensando/>
+      <Pensando />
     </div>
   );
 }
