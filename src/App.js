@@ -1,11 +1,11 @@
 import './App.css';
-import Pensando from './components/Pensando';
+import Personagens from './components/Personagens';
 
 
 function App() {
   return (
     <div className="App">
-      <Pensando />
+      <Personagens />
     </div>
   );
 }

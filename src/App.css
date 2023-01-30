@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  display: flex;
   margin: 0 auto;
 }
 
@@ -40,13 +39,35 @@
   }
 }
 
-.Pensando {
+.Personagens {
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
 }
 
-.Pensando div {
+.Personagens div {
   padding: 0rem 2rem;
+}
+
+.Personagens p {
+  background: darkseagreen;
+  border-radius: 1rem;
+  max-width: 15rem;
+  margin: 1rem auto;
+  padding: .4rem;
+  color: white;
+}
+
+.App button {
+  padding: .5rem 2rem;
+  border: 1px solid black;
+  border-radius: .5rem;
+  background: linear-gradient(50deg, #b1e9ca, #00fd5a);
+  cursor: pointer;
+  margin: 0 1rem;
+}
+
+.App button:hover {
+  background: linear-gradient(50deg, #63e09c, #017a2b);
 }
