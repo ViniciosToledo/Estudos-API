@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-expressions */
 import React, { useState, useEffect } from 'react'
 
 const Personagens = () => {
@@ -15,12 +14,14 @@ const Personagens = () => {
   const nextPage = () => {
     if (count < 42) {
       setCount(count + 1)
+      window.scrollTo(0, 0);
     }
   }
 
   const previousPage = () => {
     if (count > 1) {
       setCount(count - 1)
+      window.scrollTo(0, 0);
     }
   }
 
@@ -28,9 +29,14 @@ const Personagens = () => {
     <>
       <div className='Personagens'>
         {character.map(char =>
-          <div>
-            <p key={char.id}>{char.name}</p>
+          <div className='card'>
+            <div className='infos'>
+              <div>{char.status}</div>
+              <div>{char.species}</div>
+            </div>
             <img src={char.image} alt='Imagem do Personagem' />
+            <p key={char.id}>{char.name}</p>
+
           </div>
 
         )}
