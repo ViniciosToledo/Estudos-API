@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import './Personagens.css'
 
 const Personagens = () => {
   let [count, setCount] = useState(1)
